@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <title>Rock Paper Scissor Game</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scores">
+            <p>You : 
+                <span id="userScore">0</span>
+            </p>
+            <p>
+                Computer :
+                <span id="computerScore">0</span>
+            </p>
+        </div>
+        <div class="options">
+            <button onclick="checker('rock')">
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button onclick="checker('paper')">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button onclick="checker('scissor')">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p id="userChoice"></p>
+            <p id="compChoice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+
+
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
